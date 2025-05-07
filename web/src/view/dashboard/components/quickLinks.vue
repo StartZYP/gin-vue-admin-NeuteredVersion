@@ -81,16 +81,6 @@
       icon: User,
       title: '用户管理',
       path: 'user'
-    },
-    {
-      icon: Files,
-      title: '自动化包',
-      path: 'autoPkg'
-    },
-    {
-      icon: Memo,
-      title: '自动代码',
-      path: 'autoCode'
     }
   ]
 

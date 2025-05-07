@@ -113,24 +113,6 @@ func (i *initCasbin) InitializeData(ctx context.Context) (context.Context, error
 		{Ptype: "p", V0: "888", V1: "/customer/customer", V2: "DELETE"},
 		{Ptype: "p", V0: "888", V1: "/customer/customerList", V2: "GET"},
 
-		{Ptype: "p", V0: "888", V1: "/autoCode/getDB", V2: "GET"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/getMeta", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/preview", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/getTables", V2: "GET"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/getColumn", V2: "GET"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/rollback", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/createTemp", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/delSysHistory", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/getSysHistory", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/createPackage", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/getTemplates", V2: "GET"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/getPackage", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/delPackage", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/createPlug", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/installPlugin", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/pubPlug", V2: "POST"},
-		{Ptype: "p", V0: "888", V1: "/autoCode/addFunc", V2: "POST"},
-
 		{Ptype: "p", V0: "888", V1: "/sysDictionaryDetail/findSysDictionaryDetail", V2: "GET"},
 		{Ptype: "p", V0: "888", V1: "/sysDictionaryDetail/updateSysDictionaryDetail", V2: "PUT"},
 		{Ptype: "p", V0: "888", V1: "/sysDictionaryDetail/createSysDictionaryDetail", V2: "POST"},
@@ -269,7 +251,6 @@ func (i *initCasbin) InitializeData(ctx context.Context) (context.Context, error
 		{Ptype: "p", V0: "9528", V1: "/customer/customer", V2: "POST"},
 		{Ptype: "p", V0: "9528", V1: "/customer/customer", V2: "DELETE"},
 		{Ptype: "p", V0: "9528", V1: "/customer/customerList", V2: "GET"},
-		{Ptype: "p", V0: "9528", V1: "/autoCode/createTemp", V2: "POST"},
 		{Ptype: "p", V0: "9528", V1: "/user/getUserInfo", V2: "GET"},
 	}
 	if err := db.Create(&entities).Error; err != nil {
